@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Thư viện bootstrap -->
+
+    <!-- Các file dùng chung -->
+    <link rel="stylesheet" href="../../Assets/CSS/Common/Common.css">
+    <!-- Các file theo từng màn hình -->
+    <link rel="stylesheet" href="../../Assets/CSS/Views/Employee/Employee.css">
+    <title>Nhân viên</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="wrapper-header">
+        </div>
+        <div class="wrapper-body">
+            <div class="sidebar"></div>
+            <div class="main-content">
+                <div class="header">
+                    Danh sach nhan vien
+                </div>
+                <div class="body">
+                    <!-- <div id="gridEmployee">
+                         <table>
+                            <thead>
+                                <tr>
+                                    <th>Mã nhân viên</th>
+                                    <th>Tên nhân viên</th>
+                                    <th>Ngày sinh</th>
+                                    <th>Giới tính</th>
+                                    <th>Mức lương</th>
+                                    <th>Mức lương</th>
+                                    <th>Mức lương</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table> 
+                    </div> -->
+
+                    <div id="gridEmployee" Url="https://cukcuk.manhnv.net/api/v1/Departments" class="table-wrapper">
+                        <div class="col" FieldName="DepartmentCode">Tên nhân viên</div>
+                        <div class="col" FieldName="DepartmentName">Mã nhân viên</div>
+                        <div class="col" FieldName="Description">Mã nhân viên</div>
+                        <div class="col" FieldName="DateOfBirth" DataType="Date">Ngày sinh</div>
+                        <div class="col" FieldName="Gender">Giới tính</div>
+                        <div class="col" FieldName="Salary" DataType="Number">Mức lương</div>
+                        <div class="col" FieldName="Salary" DataType="Number">Mức lương 2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thư viện jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Các file dùng chung -->
+    <script src="../../Script/Common/Common.js"></script>
+    <script src="../../Script/Common/Enumeration.js"></script>
+    <script src="../../Script/Common/Resource.js"></script>
+    <script src="../../Script/Common/data.js"></script>
+    <!-- Các file theo từng màn hình -->
+    <script src="../../Script/Views/Empoyee/Employee.js"></script>
+</body>
+
+</html>
