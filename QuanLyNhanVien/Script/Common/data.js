@@ -66,7 +66,7 @@ var employees = [
         EmployeeCode: "NV002",
         FullName: "Nguyễn Văn Nam",
         Gender: "Nam",
-        Salary: 3000000
+        Salary: 3000000,
         DateOfBirth: "15/05/1995",
     },
     {

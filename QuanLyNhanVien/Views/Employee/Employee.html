@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../Assets/CSS/Common/Common.css">
     <!-- Các file theo từng màn hình -->
     <link rel="stylesheet" href="../../Assets/CSS/Views/Employee/Employee.css">
+    <link rel="stylesheet" href="../../Assets/CSS/Views/Employee/EmployeeDetail.css">
     <title>Nhân viên</title>
 </head>
 
@@ -27,32 +28,40 @@
                     Danh sach nhan vien
                 </div>
                 <div class="body">
-                    <!-- <div id="gridEmployee">
-                         <table>
-                            <thead>
-                                <tr>
-                                    <th>Mã nhân viên</th>
-                                    <th>Tên nhân viên</th>
-                                    <th>Ngày sinh</th>
-                                    <th>Giới tính</th>
-                                    <th>Mức lương</th>
-                                    <th>Mức lương</th>
-                                    <th>Mức lương</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            </tbody>
-                        </table> 
-                    </div> -->
+                    <!-- Toolbar nhân viên -->
+                    <div class="toolbar" id="ToolbarEmployee">
+                        <div CommandType="add" class="btnAdd">Thêm mới</div>
+                        <div CommandType="edit" class="btnEdit">Sửa</div>
+                        <div CommandType="delete" class="btnDelete">Xóa</div>
+                        <div CommandType="duplidate" class="btnDuplidate">Nhân bản</div>
+                        <div CommandType="print" class="btnPrint">In</div>
+                        <div CommandType="import" class="btnImport">Nhập khẩu</div>
+                        <div CommandType="export" class="btnExport">Xuất khẩu</div>
+                    </div>
+                    <!-- Grid nhân viên -->
+                    <div id="gridEmployee" Toolbar="ToolbarEmployee" ItemId="EmployeeID" Url="https://cukcuk.manhnv.net/api/v1/Departments" class="table-wrapper">
+                        <div class="column" style="display: none;">
+                            <div class="col" FieldName="DepartmentCode">Tên nhân viên</div>
+                            <div class="col" FieldName="DepartmentName">Mã nhân viên</div>
+                            <div class="col" FieldName="Description">Mã nhân viên</div>
+                            <div class="col" FieldName="DateOfBirth" DataType="Date">Ngày sinh</div>
+                            <div class="col" FieldName="Gender">Giới tính</div>
+                            <div class="col" FieldName="Salary" DataType="Number">Mức lương</div>
+                            <div class="col" FieldName="Salary" DataType="Number">Mức lương 2</div>
+                        </div>
+                    </div>
+                </div>
 
-                    <div id="gridEmployee" Url="https://cukcuk.manhnv.net/api/v1/Departments" class="table-wrapper">
-                        <div class="col" FieldName="DepartmentCode">Tên nhân viên</div>
-                        <div class="col" FieldName="DepartmentName">Mã nhân viên</div>
-                        <div class="col" FieldName="Description">Mã nhân viên</div>
-                        <div class="col" FieldName="DateOfBirth" DataType="Date">Ngày sinh</div>
-                        <div class="col" FieldName="Gender">Giới tính</div>
-                        <div class="col" FieldName="Salary" DataType="Number">Mức lương</div>
-                        <div class="col" FieldName="Salary" DataType="Number">Mức lương 2</div>
+                <!-- Form detail -->
+                <div class="form-detail" id="EmployeeDetail">
+                    <input type="text" Required="true" SetField="EmployeeCode" placeholder="Nhập Mã nhân viên (*)">
+                    <input type="text" Required="true" SetField="FullName" placeholder="Nhập tên nhân viên (*)">
+                    <input type="text" SetField="Address" placeholder="Địa chỉ">
+                    <input type="number"  SetField="Salary" DataType="Number" placeholder="Tiền lương">
+
+                    <div class="btn-bottom toolbar-form">
+                        <div CommandType="save" class="btn-Save">Lưu</div>
+                        <div CommandType="close" class="btn-Close">Đóng</div>
                     </div>
                 </div>
             </div>
@@ -67,6 +76,7 @@
     <script src="../../Script/Common/Resource.js"></script>
     <script src="../../Script/Common/data.js"></script>
     <!-- Các file theo từng màn hình -->
+    <script src="../../Script/Views/Empoyee/EmployeeDetail.js"></script>
     <script src="../../Script/Views/Empoyee/Employee.js"></script>
 </body>
 

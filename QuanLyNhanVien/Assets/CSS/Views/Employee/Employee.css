@@ -1,7 +1,26 @@
 *{}
 
+.btnAdd {}
+
+div#ToolbarEmployee {
+    display: flex;
+    margin: 5px;
+}
+
+div#ToolbarEmployee div {
+    /* margin: 10px; */
+    border: 1px solid gray;
+    padding: 10px;
+    cursor: pointer;
+}
+
+div#ToolbarEmployee div:hover {
+    background: yellow;
+}
+
+
 table {
-    width: 800px;
+    width: 1005px;
     border-collapse: collapse;
 }
 
@@ -13,7 +32,7 @@ td {
 }
 
 .yellow-tr{
-    background: yellow;
+    background: #e2e2d6;
 }
 
 th {
@@ -47,7 +66,7 @@ th {}
     width: 250px;
     height: 100%;
     border: 1px solid;
-    background: yellow;
+    /* background: yellow; */
 }
 
 .wrapper-body {

@@ -5,7 +5,8 @@ var Resource = Resource || {};
 Resource.DataTypeColumn = {
     Number: "Number",
     Date: "Date",
-    Enum: "Enum"
+    Enum: "Enum",
+    String: "String"
 };
 
 // Các method khi gọi ajax
@@ -30,6 +31,8 @@ Resource.CommandType = {
     Edit: "Edit",
     Delete: "Delete",
     Refresh: "Refresh",
+    Print: "Print",
+    Duplicate: "Duplicate",
     Import: "Import",
     Export: "Export"
 }

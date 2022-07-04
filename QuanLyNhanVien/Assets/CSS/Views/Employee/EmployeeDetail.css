@@ -1,0 +1,39 @@
+*{}
+
+.btn-bottom.toolbar-form {
+    display: flex;
+    justify-content: right;
+}
+
+.btn-bottom.toolbar-form div {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.btn-bottom.toolbar-form div:hover {
+    background: yellow;
+    cursor: pointer;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    width: 357px;
+}
+
+div#EmployeeDetail {
+    position: fixed;
+    height: 299px;
+    width: 400px;
+    background: #e2dddd;
+    top: 57px;
+    left: calc(50% - 200px);
+    border: 1px solid;
+    display: none;
+}
+
+.require-control{
+    border: 1px solid red;
+}
